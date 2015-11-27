@@ -1,0 +1,22 @@
+{
+  "name": "VVV-meetup",
+  "authors": [
+    "Jim Frode Hoff <jimfrodehoff@gmail.com>"
+  ],
+  "description": "Presentation about VVV for Wordpress meetup in Oslo",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "jimtrim.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal-js": "~2.6.2"
+  }
+}
