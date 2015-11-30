@@ -1,96 +1,143 @@
 <html lang="no">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>Varying Vagrant Vagrants - Intro</title>
+	<title>Varying Vagrant Vagrants - Intro</title>
 
-  <meta name="description" content="Presentasjon om VVV for Wordpress utviklere/designere.">
-  <meta name="author" content="Jim Frode Hoff">
+	<meta name="description" content="Presentasjon om VVV for Wordpress utviklere/designere.">
+	<meta name="author" content="Jim Frode Hoff">
 
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <script type="text/javascript" src="js/reveal.js"></script>
-  <link rel="stylesheet" href="css/reveal.css">
-  <link rel="stylesheet" href="css/theme/night.css" id="theme">
+	<script type="text/javascript" src="js/reveal.js"></script>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
-  <!-- For syntax highlighting -->
-  <link rel="stylesheet" href="css/zenburn.css">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="css/zenburn.css">
 </head>
 <body>
-  <div class="reveal">
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-      <section data-markdown>
-        # VVV - Jobbe mer effektivt lokalt.
-        Jim Frode Hoff, Utvikler i Cipio AS
+<div class="reveal">
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+		<section data-markdown>
+			## VVV - Jobbe mer effektivt lokalt.
+			Jim Frode Hoff, Utvikler i Cipio AS
 
-        Tidligere pluginutvikler i Smart Media (Steinkjer).
+			Tidligere pluginutvikler i Smart Media (Steinkjer).
 
-        [jimfrodehoff@gmail.com](mailto:jimfrodehoff@gmail.com) / [GitHub](http://www.github.com/Jimtrim)
-      </section>
-      <section id="aboutVagrant">
-        <section data-markdown>
-          # Hva er Vagrant?
-          Vagrant er et verktøy for å lage virituelle maskiner. På denne måten kan uviklere og designere lage egne "servere" som kjører på egen maskin.
+			[jimfrodehoff@gmail.com](mailto:jimfrodehoff@gmail.com) / [GitHub](http://www.github.com/Jimtrim)
+		</section>
+		<section id="aboutVagrant">
+			<section data-markdown>
+				## Hva er Vagrant?
+				Vagrant er et verktøy for å lage virituelle maskiner. På denne måten kan uviklere og designere lage egne
+				"servere" som kjører på egen maskin.
 
-          Når det man jobber på er lokalt kan man knekke sider, teste nytt design og teste ny kode uten å påvirke en nettside som andre ser.
-        </section>
-        <section data-markdown>
-          # Mer om Vagrant
-          Jeg kommer bare til å gå gjennom bruk av Vagrant for Wordpress, men Vagrant har utallige bruksområder. For å finne ut mer om vagrant generelt, sjekk ut [Vagrant Up](https://www.vagrantup.com/).
-        </section>
-      </section>
-      <section>
-        <section data-markdown id="aboutVVV">
-          # Hva er VVV
-          Varying Vagrant Vagrants (VVV) er et ferdig oppsett for en Vagrant-maskin som er rettet mot Wordpress. Denne maskinen har nyeste Worpress-release, beta-release og en kopi av "trunken" som blir jobbet med akkurat den dagen man provisjonering.
+				Når det man jobber på er lokalt kan man knekke sider, teste nytt design og teste ny kode uten å påvirke
+				en nettside som andre ser.
+			</section>
+			<section data-markdown>
+				## Mer om Vagrant
+				Jeg kommer bare til å gå gjennom bruk av Vagrant for Wordpress, men Vagrant har utallige bruksområder.
+				For å finne ut mer om vagrant generelt, sjekk ut [Vagrant Up](https://www.vagrantup.com/).
+			</section>
+		</section>
+		<section>
+			<section data-markdown id="aboutVVV">
+				## Hva er VVV
+				Varying Vagrant Vagrants (VVV) er et ferdig oppsett for en Vagrant-maskin som er rettet mot Wordpress.
+				Denne maskinen har nyeste Wordpress-release, beta-release og en kopi av "trunken" som blir jobbet med
+				akkurat den dagen man provisjonering.
 
-          Maskinen fungerer som en Linux-server man kan få tak i med å gå inn på en rekke subdomener som maskinen setter opp for deg. Full dokumentasjon finner på [VVVs GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
-        </section>
-      </section>
-      <section data-markdown>
-        # Komme i gang
-        1. Installere [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-        2. Installere [Vagrant](https://www.vagrantup.com/downloads.html).
-        3. Følge resten av guiden på [VVVs GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
-      </section>
-    </div>
-  </div>
+				Maskinen fungerer som en Linux-server man kan få tak i med å gå inn på en rekke subdomener som maskinen
+				setter opp for deg. Full dokumentasjon finner på [VVVs
+				GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
+			</section>
+		</section>
+		<section data-markdown>
+			## Komme i gang
+			1. Installere [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+			2. Installere [Vagrant](https://www.vagrantup.com/downloads.html).
+			3. Hente VVV fra [VVVs GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
+			* Man må ha Git for å få det nyeste av det nyeste. Hvis man ikke har git kan man hente nyeste release
+			[her](https://github.com/Varying-Vagrant-Vagrants/VVV/releases).
+			4. Navigere til mappen i en terminal
+			5. Kjøre Vagrant Up.
+			* Det anbefales også å installere to plugins til vagrant, vagrant-triggers og vagrant-hostsupdater.
+		</section>
+		<section>
+			<h3>Kommandoer</h3>
 
-  <script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+			<p>
+				<code data-trim>~$ vagrant up</code>
+			</p>
 
-		<script>
+			<p>
+				<code data-trim>~$ vagrant up</code>
+			</p>
+		</section>
+	</div>
+</div>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-				theme: Reveal.getQueryHash().theme || 'uu', // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+<script>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
+		theme: Reveal.getQueryHash().theme || 'uu', // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
-			});
+		// Parallax scrolling
+		// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+		// parallaxBackgroundSize: '2100px 900px',
 
-		</script>
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{
+				src: 'lib/js/classList.js', condition: function () {
+				return !document.body.classList;
+			}
+			},
+			{
+				src: 'plugin/markdown/marked.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			}
+			},
+			{
+				src: 'plugin/markdown/markdown.js', condition: function () {
+				return !!document.querySelector('[data-markdown]');
+			}
+			},
+			{
+				src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+				hljs.initHighlightingOnLoad();
+			}
+			},
+			{
+				src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+				return !!document.body.classList;
+			}
+			},
+			{
+				src: 'plugin/notes/notes.js', async: true, condition: function () {
+				return !!document.body.classList;
+			}
+			}
+		]
+
+	});
+
+</script>
 </body>
 </html>
