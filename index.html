@@ -14,6 +14,7 @@
 	<script type="text/javascript" src="js/reveal.js"></script>
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+	<link rel="stylesheet" href="css/custom.css" id="theme">
 
 	<!-- For syntax highlighting -->
 	<link rel="stylesheet" href="css/zenburn.css">
@@ -57,32 +58,70 @@
 				GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
 			</section>
 		</section>
-		<section data-markdown>
-			## Komme i gang
-			1. Installere [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-			2. Installere [Vagrant](https://www.vagrantup.com/downloads.html).
-			3. Hente VVV fra [VVVs GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
-			* Man må ha Git for å få det nyeste av det nyeste. Hvis man ikke har git kan man hente nyeste release
-			[her](https://github.com/Varying-Vagrant-Vagrants/VVV/releases).
-			4. Navigere til mappen i en terminal
-			5. Kjøre Vagrant Up.
-			* Det anbefales også å installere to plugins til vagrant, vagrant-triggers og vagrant-hostsupdater.
+		<section>
+			<section data-markdown>
+				## Komme i gang
+				1. Installere [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+				2. Installere [Vagrant](https://www.vagrantup.com/downloads.html).
+				3. Hente VVV fra [VVVs GitHub](https://github.com/Varying-Vagrant-Vagrants/VVV).
+				* Man må ha Git for å få det nyeste av det nyeste. Hvis man ikke har git kan man hente nyeste release
+				[her](https://github.com/Varying-Vagrant-Vagrants/VVV/releases).
+				4. Navigere til mappen i en terminal
+				5. Kjøre Vagrant Up.
+				* Det anbefales også å installere to plugins til vagrant, vagrant-triggers og vagrant-hostsupdater.
+			</section>
+			<section>
+				<h2>Installere plugin</h2>
+				<pre><code data-trim>~$ vagrant plugin install vagrant-triggers
+...
+~$ vagrant plugin install vagrant-hostsupdater
+				</code></pre>
+				<pre><code data-trim>~$ vagrant plugin install vagrant-triggers</code></pre>
+
+			</section>
 		</section>
 		<section>
-			<h3>Kommandoer</h3>
+			<section>
+				<h2>Kommandoer</h2>
+				<span>Starte server</span>
+				<pre><code data-trim>~$ vagrant up</code></pre>
 
-			<p>
-				<code data-trim>~$ vagrant up</code>
-			</p>
+				<span>Skru av server</span>
+				<pre><code data-trim>~$ vagrant halt</code></pre>
 
-			<p>
-				<code data-trim>~$ vagrant up</code>
-			</p>
+				<span>Starte server med provisjonering <em>(sjelden)</em></span>
+				<pre><code data-trim>~$ vagrant up --provision</code></pre>
+
+				<span>Slette server <em>(ytters sjelden)</em></span>
+				<pre><code data-trim>~$ vagrant destroy</code></pre>
+			</section>
+			<section>
+				<h2>Kommandoer 2</h2>
+				<span>Komme inn til server gjennm SSH. På windows kreves da <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a>, standard IP er 192.168.50.4</span>
+				<pre><code data-trim>~$ vagrant ssh</code></pre>
+
+				<span>Da vil man få et shell på Linux-maskinen som kjører, og kan konfigurere, som feks:</span>
+				<pre><code data-trim>~$ xdebug-on</code></pre>
+
+			</section>
+		</section>
+		<section data-markdown>
+			## Hvorfor gidde?
+			(live)
+		</section>
+		<section data-markdown>
+			## Ressurser
+			* [Varying Vagrant Vagrant](http://www.sau.no)
+			* [VVV Wiki](https://github.com/Varying-Vagrant-Vagrants/VVV)
+			* Vagrant
+			* Vagrant Manager
+
 		</section>
 	</div>
 </div>
 
 <script src="lib/js/head.min.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
 <script src="js/reveal.js"></script>
 
 <script>
